@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <script src="javascript.js"></script> 
+    <div class="landingpage hidden">
+        <div class="titlelanding">TIC-TAC-TOE</div>
+        <div class="setnames">
+            <form action ="" id="playernameinputs">
+                <label class="label1" for="player1nameinput">Player 1</label>
+                <input type="text" name= "player1nameinput" id="player1nameinput" placeholder="Please enter a name...">
+                <label class="label2" for="player2nameinput">Player 2</label>
+                <input type = "text" name= "player2nameinput" id="player2nameinput" placeholder="Please enter a name...">
+                <button type="button" id="namebtn">Start Game</button>
+            </form>
+        </div>
+    </div>
+    <div class="mainpage">
+        <div class="titlegame">TIC-TAC-TOE</div>
+        <div id="container" class="gameboard">
+        </div>
+        <div class="names">
+            <div class="player1">
+                <div class="playernumber">Player 1</div>
+                <div class="player1name">Sebastian</div>
+                <div class="mark">X</div>
+            </div>
+            <div class="player2">
+                <div class="playernumber">Player 2</div>
+                <div class="player2name">Gilberto</div>
+                <div class="mark">O</div>
+            </div>
+        </div>
+    </div>
+    <div class="winnermodalcontainer hidden">
+        <div class="winner">Sebastian wins!</div>
+        <button id="newgamebtn" class="newgame">New Game</button>
+    </div>
+    <script src="test.js"></script>
 </body>
+
 </html>

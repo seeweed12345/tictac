@@ -1,0 +1,247 @@
+body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    overflow: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.landingpage.hidden, .mainpage.hidden, .winnermodalcontainer.hidden {
+    display: none;
+}
+
+.landingpage {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+.titlelanding {
+    padding-top: 130px;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+
+#playernameinputs {
+    height: 500px;
+    display: grid;
+    font-size: 30px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 3fr;
+
+}
+
+#playernameinputs label {
+    line-height: 60px;
+    justify-self: end;
+    align-self: center;
+    background-color: black;
+    color: white;
+    border: transparent;
+    border-radius: 40px;
+    height: 60px;
+    width: 160px;
+    text-align: center;
+}
+
+#namebtn {
+    grid-column: 1 / 3;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    justify-self: center;
+    border-radius: 40px;
+    font-size: 30px;
+    border: transparent;
+    width: 205px;
+    height: 60px
+
+}
+
+#namebtn:hover {
+    height: 65px;
+    width: 215px;
+    background-color: red;
+    border: 3px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.setnames input {
+    width: 500px;
+    height: 60px;
+    font-size: 30px;
+    justify-self: start;
+    margin-left: 100px;
+    align-self: center;
+    border: transparent;
+    border-radius: 40px;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.label1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.label2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+#player1nameinput {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+#player2nameinput {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+
+.mainpage {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 18fr 2fr;
+    height: 100vh;
+
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row: 2 / 3;
+    width: 580px;
+    height: 580px;
+    justify-self: center;
+}
+
+.tile {
+    border: 2px solid black;
+}
+
+.titlegame {
+    grid-row: 1 / 2;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: black
+}
+
+#container div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 150px;
+    box-sizing: border-box;
+}
+
+.tile-1, .tile-4, .tile-7 {
+    border-left: none
+}
+
+.tile-3, .tile-6, .tile-9 {
+    border-right: none
+}
+
+.tile-1, .tile-2, .tile-3 {
+    border-top: none;
+} 
+
+
+.tile-7, .tile-8, .tile-9 {
+    border-bottom: none;
+}
+
+.tile:hover {
+    border: 3px solid red;
+}
+
+.names {
+    margin-top: 40px;
+    grid-row: 3 /4;
+    display: flex;
+    gap: 300px;
+    font-size: 40px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.player1, .player2 {
+    display: flex;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.playernumber {
+    background-color: black;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.mark {
+    color: white;
+    background-color: red;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom-right-radius: 14px;
+    border-top-right-radius: 14px;
+
+}
+
+.player1name, .player2name {
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tile.winningtile {
+    color: red;
+}
+
+.winnermodalcontainer {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    border-radius: 20px;
+    position: fixed;
+    background-color: red;
+    color: white;
+    border: 5px solid black;
+    top: 30%;
+    font-size: 100px;
+    left: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: auto;
+    height: 300px;
+    text-align: center;
+    transform: translate(-50%, 0);
+    justify-items: center;
+}
+
+.winner {
+    align-self: end;
+}
+
+.newgame {
+    align-self: center;
+    width: 200px;
+    background-color: white;
+    color: black;
+    border: none;
+    border: 3px solid black;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.newgame:hover {
+    background-color: rgb(230, 230, 230);
+}
