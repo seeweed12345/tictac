@@ -62,7 +62,7 @@ const game = (() => {
             lastPlayer = `${
               document.getElementsByClassName("player1name")[0].textContent
             }`;
-            const lastMark = "X";
+            lastMark = "X";
           } else if (marks[0] == "O") {
             lastPlayer = `${
               document.getElementsByClassName("player2name")[0].textContent
@@ -75,7 +75,14 @@ const game = (() => {
           tally++;
         }
         if (winningNumbers(lastPlayer, lastMark) != "notie" && tally == 9) {
-          alert("tie");
+          winningPlayer.textContent = `it's a tie!`;
+          winnerModal.classList.remove("hidden");
+          console.log(tally);
+          console.log("tie");
+          tally = 0;
+          console.log(tally);
+        } else if (winningNumbers(lastPlayer, lastMark) == "notie") {
+          tally = 0;
         }
       });
     });
